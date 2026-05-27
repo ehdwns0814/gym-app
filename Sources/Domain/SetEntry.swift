@@ -10,6 +10,7 @@ final class SetEntry {
     var repetitions: Int?
     var durationSeconds: Int?
     var isCompleted: Bool
+    var position: Int
     var workoutEntry: WorkoutEntry?
 
     init(
@@ -20,6 +21,7 @@ final class SetEntry {
         repetitions: Int? = nil,
         durationSeconds: Int? = nil,
         isCompleted: Bool = false,
+        position: Int = 0,
         workoutEntry: WorkoutEntry? = nil
     ) {
         self.id = id
@@ -29,6 +31,7 @@ final class SetEntry {
         self.repetitions = repetitions
         self.durationSeconds = durationSeconds
         self.isCompleted = isCompleted
+        self.position = position
         self.workoutEntry = workoutEntry
     }
 }

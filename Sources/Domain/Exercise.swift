@@ -6,7 +6,7 @@ final class Exercise {
     @Attribute(.unique) var id: UUID
     var createdAt: Date
     var updatedAt: Date
-    @Attribute(.unique) var seedKey: String?
+    var seedKey: String?
     var name: String
     var typeRawValue: String
     var isSystem: Bool
